@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nhập chuỗi , tìm số nguyên âm</title>
+</head>
+<body>
+<script>
+    let x = prompt("nhap chuoi")
+    let arr=x.split("")
+    count =0
+    function demnguyenam(){
+        for (let i=0;i<arr.length;i++){
+if (arr[i]==="a" || arr[i]==="o"|| arr[i]==="i"|| arr[i]==="u" || arr[i]==="e"){
+    count++
+}
+    } if(count==0){
+            alert("false")
+        }else {
+            alert("số nguyên âm là " +count)
+        }
+    }
+    demnguyenam()
+
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp</title>
+</head>
+<body>
+<script>
+    class Animal {
+        name;
+        weight;
+        setname(name) {
+            this.name=name;
+        }
+        setweight(weight){
+            this.weight=weight;
+        }
+        getName(){
+            return this.name
+        }
+        getWeight(){
+            return this.weight
+        }
+        toString(){
+            return this.getName() + " Cân nặng là " + this.getWeight()
+        }
+    }
+    let animal1 = new Animal()
+    animal1.setname("Gấu")
+    animal1.setweight(37.5)
+    document.write(animal1.toString())
+    let animal2 = new Animal("name","weight")
+    animal2.setname("Mouse")
+    animal2.setweight(38.5);
+    document.write(animal2.toString())
+</script>
+</body>
+</html>
