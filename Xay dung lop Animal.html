@@ -22,17 +22,17 @@
             return this.weight
         }
         toString() {
-            return this.getName() + " có cân nặng là: " + this.getWeight()+ "<br>";
+            return this.name + " có cân nặng là: " + this.weight+ "<br>";
         }
     }
-    let animal1 = new Animal()
-    animal1.setname("Monkey")
-    animal1.setweight(35.6)
-    document.write(animal1.toString())
-    let animal2 = new Animal("name","weight")
-    animal2.setname("Mouse")
-    animal2.setweight(38.5);
-    document.write(animal2.toString())
+    let objAnimal1 = new Animal();
+    objAnimal1.name = "Elephant";
+    objAnimal1.weight = 45.6;
+    document.write(objAnimal1.toString());
+
+    let objAnimal2 = new Animal();
+    objAnimal2.name = "Mouse";
+    document.write(objAnimal2.name);
 </script>
 </body>
 </html>
