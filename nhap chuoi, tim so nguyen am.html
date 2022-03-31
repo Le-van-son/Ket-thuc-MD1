@@ -6,21 +6,23 @@
 </head>
 <body>
 <script>
-    let arr = prompt("nhap chuoi")
-    count =0
-    function demnguyenam(){
-        for (let i=0;i<arr.length;i++){
-if (arr[i]==="a" || arr[i]==="o"|| arr[i]==="i"|| arr[i]==="u" || arr[i]==="e"){
-    count++
-}
-    } if(count==0){
-            alert("false")
-        }else {
-            alert("số nguyên âm là " +count)
+    let arr = prompt("nhap chuoi");
+    let count = 0;
+
+    function demnguyenam() {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === "a" || arr[i] === "o" || arr[i] === "i" || arr[i] === "u" || arr[i] === "e") {
+                count++;
+            }
+        }
+        if (count === 0) {
+            alert("false");
+        } else {
+            alert("số kí tự nguyên âm trong chuỗi là " + count);
         }
     }
-    demnguyenam()
 
+    demnguyenam();
 
 
 </script>

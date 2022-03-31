@@ -7,30 +7,37 @@
 <body>
 <script>
     class Animal {
-        a;
-        b;
-        setname(a){
-            this.name=a;
+        constructor(name, weight) {
+            this.name = name;
+            this.weight = weight;
         }
-        setweight(b){
-            this.weight=b;
+
+        setName(name) {
+            this.name = name;
         }
-        getName(){
+
+        setWeight(weight) {
+            this.weight = weight;
+        }
+
+        getName() {
             return this.name;
         }
-        getWeight(){
-            return this.weight
+
+        getWeight() {
+            return this.weight;
         }
+
         toString() {
-            return this.name + " có cân nặng là: " + this.weight+ "<br>";
+            return this.getName() + " có cân nặng là: " + this.getWeight() + "<br>";
         }
     }
-    let objAnimal1 = new Animal();
-    objAnimal1.name = "Elephant";
-    objAnimal1.weight = 45.6;
-    document.write(objAnimal1.toString());
 
-    let objAnimal2 = new Animal();
+    let objAnimal1 = new Animal();
+    objAnimal1.setName("Elephant");
+    objAnimal1.setWeight(45.6);
+    document.write(objAnimal1.toString());
+    let objAnimal2 = new Animal("Sen", 40);
     objAnimal2.name = "Mouse";
     document.write(objAnimal2.name);
 </script>
